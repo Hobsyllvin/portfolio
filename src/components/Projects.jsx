@@ -127,8 +127,7 @@ export default function Projects() {
             tags: ["Python", "Kinematics"],
             modalTags: ["Python", "Kinematics"],
             overlayDesc: "Automated item retrieval and transport for an 'Albert' mobile manipulator in a simulated warehouse environment.\n• Dual-Stage Architecture: Implemented $RRT^*$ for the 7-DOF Franka Panda arm and Informed $RRT^*$ for the mobile base, ensuring asymptotic optimality.\n• Kinematics & Control: Established forward and inverse kinematics using DH convention and integrated PID/PD control.\n• Path Refinement: Applied spline interpolation to algorithm outputs for smoother trajectories.",
-            youtubeId: "VViC1GyVnd4",
-            mediaSlots: { type: "video", count: 1 }
+            youtubeId: "VViC1GyVnd4"
         },
         {
             title: "MARCOS II",
@@ -289,43 +288,40 @@ export default function Projects() {
                                     </div>
                                 )}
 
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-4">Media &amp; Gallery</h3>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-10">
-                                        {selectedProject.mediaSlots?.images ? (
-                                            selectedProject.mediaSlots.images.map((img, i) => (
-                                                <div
-                                                    key={i}
-                                                    className="aspect-video bg-background-dark border border-border-dark rounded-xl overflow-hidden group cursor-zoom-in"
-                                                    onClick={() => setActiveLightboxImage(img)}
-                                                >
-                                                    <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                                </div>
-                                            ))
-                                        ) : selectedProject.mediaSlots ? (
-                                            Array.from({ length: selectedProject.mediaSlots.count || 0 }).map((_, i) => (
-                                                <div key={i} className="aspect-video bg-background-dark border border-border-dark rounded-xl flex flex-col items-center justify-center text-slate-500 hover:border-secondary/50 hover:text-secondary transition-colors cursor-pointer group">
-                                                    {selectedProject.mediaSlots.type === 'video' ? (
-                                                        <>
-                                                            <span className="material-symbols-outlined text-[40px] mb-2 group-hover:scale-110 transition-transform">play_circle</span>
-                                                            <span className="text-xs font-mono">Play Video</span>
-                                                        </>
-                                                    ) : (
-                                                        <>
-                                                            <span className="material-symbols-outlined text-[40px] mb-2 group-hover:scale-110 transition-transform">image</span>
-                                                            <span className="text-xs font-mono">View Image {i + 1}</span>
-                                                        </>
-                                                    )}
-                                                </div>
-                                            ))
-                                        ) : (
-                                            <div className="col-span-full py-12 flex flex-col items-center justify-center text-slate-500 border border-dashed border-border-dark rounded-xl">
-                                                <span className="material-symbols-outlined text-4xl mb-2 opacity-20">inventory_2</span>
-                                                <span className="text-sm font-mono opacity-50">No additional media available</span>
-                                            </div>
-                                        )}
+                                {selectedProject.mediaSlots && (
+                                    <div>
+                                        <h3 className="text-xl font-bold text-white mb-4">Media &amp; Gallery</h3>
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-10">
+                                            {selectedProject.mediaSlots.images ? (
+                                                selectedProject.mediaSlots.images.map((img, i) => (
+                                                    <div
+                                                        key={i}
+                                                        className="aspect-video bg-background-dark border border-border-dark rounded-xl overflow-hidden group cursor-zoom-in"
+                                                        onClick={() => setActiveLightboxImage(img)}
+                                                    >
+                                                        <img src={img} alt={`Gallery ${i}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                                    </div>
+                                                ))
+                                            ) : (
+                                                Array.from({ length: selectedProject.mediaSlots.count || 0 }).map((_, i) => (
+                                                    <div key={i} className="aspect-video bg-background-dark border border-border-dark rounded-xl flex flex-col items-center justify-center text-slate-500 hover:border-secondary/50 hover:text-secondary transition-colors cursor-pointer group">
+                                                        {selectedProject.mediaSlots.type === 'video' ? (
+                                                            <>
+                                                                <span className="material-symbols-outlined text-[40px] mb-2 group-hover:scale-110 transition-transform">play_circle</span>
+                                                                <span className="text-xs font-mono">Play Video</span>
+                                                            </>
+                                                        ) : (
+                                                            <>
+                                                                <span className="material-symbols-outlined text-[40px] mb-2 group-hover:scale-110 transition-transform">image</span>
+                                                                <span className="text-xs font-mono">View Image {i + 1}</span>
+                                                            </>
+                                                        )}
+                                                    </div>
+                                                ))
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
+                                )}
                             </div>
                         </div>
                     </div>
