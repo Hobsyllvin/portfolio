@@ -91,7 +91,7 @@ export default function Projects() {
         {
             title: "Philips Heated Breast Shield",
             desc: "Warming the breast tissue for increased milk flow.",
-            img: "public/projects/philips/philips_breastpump.webp",
+            img: "/projects/philips/philips_breastpump.webp",
             tags: ["User-Centric Design", "Soldering"],
             modalTags: ["User-Centric Design", "Soldering", "Creo", "DfSS"],
             overlayDesc: "Key Technical Implementations:\n\n• Functional Prototyping: Led the end-to-end hardware development of multiple functional prototypes. This included component sourcing, custom circuit design for thermal regulation, as well as manual assembly and soldering.\n• CTQ Parameter Identification: Analyzed and defined Critical-to-Quality (CTQ) parameters, such as heat-up time, maximum temperature and power consumption, to ensure the design met both medical and user requirements.\n• User-Centric Validation: Facilitated a user study to evaluate different heating zone configurations. By gathering qualitative feedback on perceived comfort and effectiveness, we narrowed down the most promising thermal configurations.\n• Product Handover: Following the successful validation of the prototypes, I helped prepare the technical documentation to transition the project to the PDLM (Product Development & Lifecycle Management) team for large-scale industrialization and manufacturing.",
