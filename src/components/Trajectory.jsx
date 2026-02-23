@@ -38,7 +38,7 @@ export default function Trajectory() {
                         <div className="flex flex-col sm:flex-row items-start sm:items-center w-full">
                             <div className="w-full sm:w-1/2 sm:pr-12 sm:text-right pl-20 sm:pl-0 mb-4 sm:mb-0 relative order-2 sm:order-1">
                                 <span className="block text-secondary text-sm font-bold tracking-wider mb-1">MAY 2025 — PRESENT</span>
-                                <h3 className="font-display text-xl font-bold text-white">Product Engineer</h3>
+                                <h3 className="font-display text-xl font-bold text-white">Product Engineer and Prototyping Owner</h3>
                                 <p className="text-slate-400 text-sm mt-1 font-medium">Philips, Eindhoven, NL</p>
                                 <p className="text-slate-500 text-sm mt-3 leading-relaxed hidden sm:block">Developing prototypes and patent ideas for Philips Avent products.</p>
                             </div>

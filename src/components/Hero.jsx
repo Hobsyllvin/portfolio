@@ -4,7 +4,7 @@ export default function Hero() {
             <div className="grid lg:grid-cols-12 gap-0 min-h-[550px]">
                 <div className="lg:col-span-6 flex flex-col justify-center p-10 lg:p-16 relative z-10">
                     <div className="mb-6 flex items-center gap-3">
-                        <span className="bg-secondary/10 text-secondary px-3 py-1 text-xs font-semibold tracking-wide border border-secondary/20 rounded-full">R&amp;D SPECIALIST</span>
+                        <span className="bg-secondary/10 text-secondary px-3 py-1 text-xs font-semibold tracking-wide border border-secondary/20 rounded-full">PRODUCT ENGINEER in R&D</span>
                     </div>
                     <h1 className="font-display text-5xl font-bold tracking-tight text-white lg:text-7xl mb-6 leading-[1.1]">
                         Rapid <br />
