@@ -12,9 +12,9 @@ export default {
         "secondary": "#e8aa30", // Warm amber accent
         "background-light": "#f6f7f8",
         "background-dark": "#0d1117", // Deeper, almost black
-        "surface-dark": "#161b22", // Panel background
+        "surface-dark": "#1f242cff", // Panel background
         "border-dark": "#30363d",
-        "text-muted": "#8b949e",
+        "text-muted": "#a0a9b4ff",
       },
       fontFamily: {
         "display": ["Space Grotesk", "sans-serif"],

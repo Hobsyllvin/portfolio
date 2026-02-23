@@ -33,13 +33,13 @@ export default function Hero() {
                 </div>
                 <div className="lg:col-span-6 relative bg-background-dark overflow-hidden flex items-center justify-center border-l border-border-dark">
                     <div className="relative w-full h-full min-h-[400px]">
-                        <img alt="Abstract mechanical robotic arm in dark workshop environment" className="h-full w-full object-cover opacity-80 mix-blend-normal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-CdOzwiEuS_n-QYjpn9aY4-wxwt0gNwAOH0Fu8_7JSgJEJ1WqGuWSAqDqj_xwCfVrvWY8pbPxE3u83AOJRYpNLMNhmBI2Pn9ZBB3SjJecK_N77OeRrPhwtO0Dy1JKQE21oowg5AKYon_roHG97K08vJG31P3wCabsBKYhvh1YWvZBJVoWa0JvuQvFo6f5FC9iq1b9dlIOXnyNsOGwaMenTQUu791gisqv6wivmwneKPMlYNLaUe-CkGBrnXyaqeuKDyLHIFcqeCAH" />
+                        <img alt="Abstract mechanical robotic arm in dark workshop environment" className="h-full w-full object-cover opacity-80 mix-blend-normal" src="/projects/levr/ma_levr_in.webp" />
                         <div className="absolute inset-0 bg-gradient-to-t from-surface-dark/90 via-transparent to-transparent"></div>
                         <div className="absolute bottom-8 left-8 right-8 bg-black/60 backdrop-blur-md border border-white/10 p-4 rounded-xl">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <p className="text-white text-sm font-medium">Latest Prototype</p>
-                                    <p className="text-slate-400 text-xs mt-0.5">6-Axis Articulated Arm</p>
+                                    <p className="text-white text-sm font-medium">Prototype for Rendering Weight in VR</p>
+                                    <p className="text-slate-400 text-xs mt-0.5">1-DoF Haptic Device</p>
                                 </div>
                                 <div className="flex items-center gap-2 text-secondary">
                                     <span className="material-symbols-outlined text-[20px]">science</span>
