@@ -98,11 +98,7 @@ export default function Projects() {
             mediaSlots: {
                 type: "image",
                 images: [
-                    "/projects/levr/levr_poster.jpg",
-                    "/projects/levr/ma_levr_anno_in.webp",
-                    "/projects/levr/ma_unity_in.webp",
-                    "/projects/levr/ma_confusion_in.webp",
-                    "/projects/levr/ma_weight_in.webp"
+                    "/projects/philips/philips_breastpump.webp"
                 ]
             }
         },
