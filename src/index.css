@@ -1,0 +1,44 @@
+@import 'katex/dist/katex.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+
+  body.modal-open header {
+    display: none;
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.bg-grid-pattern {
+  background-size: 60px 60px;
+  background-image: linear-gradient(to right, rgba(48, 54, 61, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(48, 54, 61, 0.15) 1px, transparent 1px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30bae8;
+}
